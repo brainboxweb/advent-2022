@@ -2,7 +2,6 @@ package helpers
 
 import (
 	"bufio"
-	"log"
 	"os"
 	"strconv"
 )
@@ -24,7 +23,7 @@ func ReverseSliceOfSlices(s [][]string) [][]string {
 func GetData(filename string) []int {
 	file, err := os.Open(filename)
 	if err != nil {
-		log.Fatalf("failed opening file: %s", err)
+		panic("not expected")
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
@@ -47,7 +46,7 @@ func GetData(filename string) []int {
 func GetDataString(filename string) []string {
 	file, err := os.Open(filename)
 	if err != nil {
-		log.Fatalf("failed opening file: %s", err)
+		panic("not expected")
 	}
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
