@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-const dataPath = "../data/"
+const dataPath = "../testdata"
 
 func TestPart1(t *testing.T) {
 	tests := []struct {
@@ -16,11 +16,11 @@ func TestPart1(t *testing.T) {
 		expected int
 	}{
 		{
-			dataPath + "day4_test.txt",
+			dataPath + "/day4_test.txt",
 			2,
 		},
 		{
-			dataPath + "day4.txt",
+			dataPath + "/day4.txt",
 			496,
 		},
 	}
@@ -39,11 +39,11 @@ func TestPart2(t *testing.T) {
 		expected int
 	}{
 		{
-			dataPath + "day4_test.txt",
+			dataPath + "/day4_test.txt",
 			4,
 		},
 		{
-			dataPath + "day4.txt",
+			dataPath + "/day4.txt",
 			847,
 		},
 	}
